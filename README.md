@@ -4,7 +4,8 @@ Based on https://github.com/monkins1010/ccminer/tree/ARM
 
 Git and Build Process:
 ```
-sudo apt install software-properties-common -y
+sudo apt update
+sudo apt install -y wget gnupg2 ca-certificates lsb-release
 sudo add-apt-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-16 main"
 wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
 sudo apt update
